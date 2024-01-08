@@ -1,1 +1,50 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <section id="name_email-age">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="number" placeholder="Age" min="0" max="120">
+            </section>
+            <section id="select">
+                <select id="dropdown">
+                    <option value="challanges">Challanges</option>
+                    <option value="projects">Projects</option>
+                </select>
+            </section>
+            <section id="radio">
+                <input type="radio" name="recommendation" id="definitely" value="definetely">
+                <label for="definitely">Definitely</label>
+                <input type="radio" name="recommendation" id="maybe" value="maybe">
+                <label for="maybe">Maybe</label>
+            </section>
+            <section id="checkbox">
+                <input type="checkbox" name="improvement" id="front_end" value="front_end">
+                <label for="front_end">Front-end</label>
+                <input type="checkbox" name="improvement" id="back_end" value="back_end">
+                <label for="back_end">Back-end</label>
+            </section>
+            <section id="textarea">
+                <label for="text">Any comments or suggestions?</label>
+                <textarea name="text" placeholder="Enter your comment here..."></textarea>
+            </section>
+            <section id="submit_button">
+                <button type="submit" id="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+</body> 
+</html>
